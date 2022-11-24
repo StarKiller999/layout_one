@@ -1,0 +1,31 @@
+// *{
+//     box-sizing: border-box;
+// }
+
+a{
+    text-decoration: none; // убирает подчеркивания у ссылок
+    display: inline-block; // строчно-блончый элемент
+}
+ul, li {
+    list-style: none; // убирает маркеры
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1140px; // max ширина
+    margin: 0 auto; // центрировать
+    padding: 15px; // чтобы не прилипал к стенкам планшетов и смартфонов
+}
+body {
+    font-family: 'Montserrat';
+    background-color: $back;
+    color: $text;
+    font-size: 14px;
+    line-height: 19px;
+    
+}
+.header__btn {
+    float: right;
+    padding: 15px 20px 4px 50px;
+    font-size: 16px;
+}
