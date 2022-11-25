@@ -2,30 +2,155 @@
 //     box-sizing: border-box;
 // }
 
-a{
+a {
     text-decoration: none; // убирает подчеркивания у ссылок
     display: inline-block; // строчно-блончый элемент
 }
-ul, li {
+
+ul,
+li {
     list-style: none; // убирает маркеры
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 1140px; // max ширина
     margin: 0 auto; // центрировать
     padding: 15px; // чтобы не прилипал к стенкам планшетов и смартфонов
 }
+
 body {
-    font-family: 'Montserrat';
+    font-family: 'Manrope';
     background-color: $back;
     color: $text;
     font-size: 14px;
     line-height: 19px;
-    
+
 }
+
 .header__btn {
-    float: right;
-    padding: 15px 20px 4px 50px;
+    padding: 15px 16px 4px 50px;
+}
+
+.header__order-call {
+    display: inline-block;
+    width: 123px;
+    height: 19px;
+    top: 72px;
+    left: 1072px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.12px;
+    text-align: center;
+
+    border: 1px solid #182A44;
+    border-radius: 5px;
+}
+
+.header__content {
+    padding: 29.91px 0px 23px;
+}
+
+.header__phone,
+.header__email {
+    letter-spacing: 0.25px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+
+.header__content-inner {
+    background: $back_two;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: #FFFFFF;
+    padding: 19px 18px;
+    font-size: 14px;
+}
+
+.slider {
+    // background-image: url(../img/shev_lent.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 550px;
+    background: #8E9296;
+}
+
+.slider__item {
+    text-align: left;
+    color: #FFFFFF;
+    padding-top: 110px;
+    max-width: 561px;
+    margin: 0;
+}
+
+.slider__title {
+    // text-transform: uppercase; // верхний регистр
+
+    font-size: 60px;
+    line-height: 81.96px;
+    font-weight: 500px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+
+}
+
+.slider__text {
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 24px;
+
+}
+
+.button {
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    // left: 142px;
+    // top: 468px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    // padding: 4px 4px;
+    margin-bottom: 35px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+.slider__btn {
+    width: 134px;
+    height: 39px;
+    left: 141px;
+    top: 533px;
+    text-align: center;
+    background: #2E81C7;
+    border-radius: 5px;
+    margin-bottom: 174px;
+}
+
+.slider__slider,
+.arrow_btn {
+    display: inline-block;
     font-size: 16px;
 }
