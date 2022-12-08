@@ -15,10 +15,14 @@ li {
 }
 
 .container {
-    max-width: 1140px; // max ширина
-    margin: 0 auto; // центрировать
+    max-width: 1400px; // max ширина
+    margin: 0 142px; // центрировать 0 - значение сверху и сниху auto - значение слева и справа
     padding: 15px; // чтобы не прилипал к стенкам планшетов и смартфонов
+    // background-color: green;
+    
+
 }
+
 
 body {
     font-family: 'Manrope';
@@ -26,31 +30,71 @@ body {
     color: $text;
     font-size: 14px;
     line-height: 19px;
-
+   
 }
 
-.header__btn {
-    padding: 15px 16px 4px 50px;
+
+.city,
+.address,
+.work_time,
+.messengers,
+.search {
+    display: inline-block; //block - стандартное значение, inline -в строчку, inline-block -блочные элементы в строчку;
+    padding: 15px 4px 16px 4px; // сверху справа снизу слева 
+    // background-position: center;
+    background-color: orange;
+}
+
+.header__top__one {
+    border-bottom: 1px solid #C7CCD2;
+}
+
+// .city, 
+// .address, 
+// .work_time, 
+// .messengers, 
+// .search {
+//     display: flex;
+//     justify-content: space-between;    
+// }
+
+.icon-img, .city-ch {
+    display: inline;  
+}
+.address {
+    // margin-left: 142px;
+}
+
+.search {
+    margin-right: 216px;
+}
+
+// .t, .w, .v {
+
+// }
+
+.logo,
+.company-name,
+.tel,
+.mail,
+.order-call {
+    display: inline-block;
+    padding: 15px 4px 16px 50px;
+    background-color: yellowgreen;
+}
+
+.header__phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_words {
+    vertical-align: top;
 }
 
 .header__order-call {
-    display: inline-block;
-    width: 123px;
-    height: 19px;
-    top: 72px;
-    left: 1072px;
-
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19.12px;
-    text-align: center;
-
     border: 1px solid #182A44;
     border-radius: 5px;
-}
-
-.header__content {
-    padding: 29.91px 0px 23px;
 }
 
 .header__phone,
@@ -58,24 +102,13 @@ body {
     letter-spacing: 0.25px;
 }
 
-.header__content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-
-
 .header__content-inner {
     background: $back_two;
     color: #FFFFFF;
-
-    display: flex;
-    justify-content: space-around;
 }
 
 .menu li {
-    display: inline-block;
+    display: inline;
 }
 
 .menu a {
@@ -84,13 +117,28 @@ body {
     font-size: 14px;
 }
 
+.menu__btn {
+    display: inline-block;
+    background-color: yellow;
+}
+
 .slider {
-    // background-image: url(../img/shev_lent.png);
+    background-image: url('./img/image10.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 550px;
-    background: #8E9296;
+    // background: #8E9296;
+}
+
+.slider-img {
+    min-height: 550px;
+    weight: 1400px;
+}
+
+.logo-img {
+    height: 81.96px;
+    weight: 500px;
 }
 
 .slider__item {
@@ -120,37 +168,27 @@ body {
 
 }
 
+.slider__btn {}
+
 .button {
 
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    // left: 142px;
-    // top: 468px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 22px;
+    display: inline;
+    padding: 4px 9px 4px 10px;
     text-align: center;
-    // padding: 4px 4px;
-    margin-bottom: 35px;
 
     border: 1px solid #FFFFFF;
     border-radius: 3px;
 }
 
-.slider__btn {
-    width: 134px;
-    height: 39px;
-    left: 141px;
-    top: 533px;
+.slider__menu {
+
     text-align: center;
     background: #2E81C7;
     border-radius: 5px;
-    margin-bottom: 174px;
 }
 
-.slider__slider,
-.arrow_btn {
-    display: inline-block;
+.slider__choice,
+.arrow {
+    display: inline;
     font-size: 16px;
 }

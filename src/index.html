@@ -13,42 +13,85 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="container">
-                <a class='header__btn city' href="#">Москва</a>
-                <a class='header__btn address' href="#">г. Москва, ул. Рябиновая, 28А, стр 3</a>
-                <a class='work_time' href="#">ПН-ПТ 9:00-18:00</a>
-                <a class='header__btn t' href="#">t</a>
-                <a class='header__btn w' href="#">w</a>
-                <a class='header__btn v' href="#">v</a>
-                <a class='search' href="#">Поиск товаров и услуг</a>
+            <div class="header__top__one">
+                <div class="container">
+
+                    <a class='city header__btn' href="#">
+                        <img class='icon-img city-img' src="./img/Geolocation.svg" alt="">
+                        <div class="city-ch">Москва</div>
+                        <img class='icon-img arrow-img' src="./img/Down_Arrow_3_.svg" alt="">
+                    </a>
+
+                    <div class="address">
+                        <img class='icon-img address-img' src="./img/Address.svg" alt="">
+                        <div class='address-ch'>г. Москва, ул. Рябиновая, 28А, стр 3</div>
+                    </div>
+                    <div class='work_time'>
+                        <img class='icon-img time-img' src="./img/Clock.svg" alt="">
+                        <div>ПН-ПТ 9:00-18:00</div>
+                    </div>
+                    <div class="messengers">
+                        <a class='icon-img header__btn t' href="#">
+                            <img class='messanger-img' src="./img/Teleg.svg" alt=""></a>
+                        <a class='icon-img header__btn w' href="#">
+                            <img class='messanger-img' src="./img/Whatsapp.svg" alt=""></a>
+                        <a class='icon-img header__btn v' href="#">
+                            <img class='messanger-img' src="./img/Viber.svg" alt=""></a>
+                    </div>
+                    <div class='search'>
+                        <a href="#"></a>
+                        <div>Поиск товаров и услуг</div>
+                        <img class='icon-img search-img' src="./img/Search.svg" alt="">
+                    </div>
+                </div>
             </div>
             <div class="header__content">
-                <div class="container">
-                    <a class='logo' href="#">Лого
-                        <!-- <img src="img/logo.png" alt=""> -->
-                    </a>
-                    <a class='logo_words' href="#">КОНВЕЕРНОЕ ОБОРУДОВАНИЕ</a>
-                    <a class='header__phone' href="tel:88002348606">8 (800) 234-86-06</a>
-                    <a class='header__phone' href="tel:89803260136">8 (980) 326-01-36</a>
-                    <a class='header__mail' href="#">office.rtb@bk.ru</a>
-                    <a class='header__ask-question' href="#">Есть вопросы? Ответим!</a>
-                    <a class='header__order-call' href="#">Заказать звонок</a>
+                <div class="header__top__two">
+                    <div class="container">
+                        <div class="logo">
+                            <a class='logo-logo' href="#">
+                                <img class='logo-img' src="./img/logo.svg" alt="">
+                            </a>
+                        </div>
+
+                        <div class="tel">
+                            <img class='tel-img' src="./img/Phone.svg" alt="">
+                            <a class='header__phone' href="tel:88002348606">8 (800) 234-86-06</a>
+                            <img class='tel-img' src="./img/Phone.svg" alt="">
+                            <a class='header__phone' href="tel:89803260136">8 (980) 326-01-36</a>
+                        </div>
+                        <div class="mail">
+                            <img class='mail-img' src="./img/Mail.svg" alt="">
+                            <a class='header__mail' href="#">office.rtb@bk.ru</a>
+                        </div>
+                        <div class="order-call">
+                            <a class='header__ask-question' href="#">Есть вопросы? Ответим!</a>
+                            <a class='header__order-call' href="#">Заказать звонок</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="header__content-inner">
-            <nav class="menu">
-                <ul>
-                    <li><a href='#'>Каталог</a></li>
-                    <li><a href='#'>Главная</a></li>
-                    <li><a href='#'>Услуги</a></li>
-                    <li><a href='#'>О компании</a></li>
-                    <li><a href='#'>Производство</a></li>
-                    <li><a href='#'>Доставка и оплата</a></li>
-                    <li><a href='#'>Контакты</a></li>
-                    <li><a href='#'>Корзина</a></li>
-                </ul>
-            </nav>
+            <div class="container">
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <img class='coub-img' src="./img/Coubs.svg" alt="">
+
+                            <a class='menu__btn' href='#'>Каталог</a>
+                        </li>
+                        <li><a class='menu__btn' href='#'>Главная</a></li>
+                        <li><a class='menu__btn' href='#'>Услуги</a></li>
+                        <li><a class='menu__btn' href='#'>О компании</a></li>
+                        <li><a class='menu__btn' href='#'>Производство</a></li>
+                        <li><a class='menu__btn' href='#'>Доставка и оплата</a></li>
+                        <li><a class='menu__btn' href='#'>Контакты</a></li>
+                        <li><a class='menu__btn' href='#'><img class='market-img' src="./img/shopping_cart.svg"
+                                    alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="slider">
@@ -59,14 +102,22 @@
                         <div class="slider__title">Шевронные ленты</div>
                         <div class="slider__text">Наша компания производит как открытые, так и закрытые ленты различных
                             форм:</div>
+
                         <div class="button">Y</div>
                         <div class="button">U</div>
                         <div class="button">V</div>
-                        <div class="slider__btn">В каталог</div>
-                        <div class="slider__slider">Шевронные ленты</div>
-                        <div class="slider__slider">Резиновые конвейерные ленты</div>
-                        <div class="slider__slider">ПВХ конвейерные ленты</div>
-                        <div class="arrow_btn">Стрелка</div>
+                        <div class="slider__menu">В каталог</div>
+                        <div class="slider__choice">
+                            <div class="slider__btn">Шевронные ленты</div>
+                            <div class="slider__btn">Резиновые конвейерные ленты</div>
+                            <div class="slider__btn">ПВХ конвейерные ленты</div>
+                        </div>
+                        <div class="arrow">
+                            <div class="arrow__btn">Лево</div>
+                            <div class="arrow__btn">1 / 3</div>
+                            <div class="arrow__btn">Право</div>
+                        </div>
+
                     </div>
 
                 </div>
