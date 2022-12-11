@@ -17,12 +17,8 @@ li {
 .container {
     max-width: 1400px; // max ширина
     margin: 0 142px; // центрировать 0 - значение сверху и сниху auto - значение слева и справа
-    padding: 15px; // чтобы не прилипал к стенкам планшетов и смартфонов
-    // background-color: green;
-    
-
+    // padding: 15px; // чтобы не прилипал к стенкам планшетов и смартфонов
 }
-
 
 body {
     font-family: 'Manrope';
@@ -30,9 +26,7 @@ body {
     color: $text;
     font-size: 14px;
     line-height: 19px;
-   
 }
-
 
 .city,
 .address,
@@ -41,55 +35,91 @@ body {
 .search {
     display: inline-block; //block - стандартное значение, inline -в строчку, inline-block -блочные элементы в строчку;
     padding: 15px 4px 16px 4px; // сверху справа снизу слева 
-    // background-position: center;
-    background-color: orange;
+    // background-color: orange;
 }
 
 .header__top__one {
+    height: 50px;
+    // background-color: pink;
     border-bottom: 1px solid #C7CCD2;
 }
 
-// .city, 
-// .address, 
-// .work_time, 
-// .messengers, 
-// .search {
-//     display: flex;
-//     justify-content: space-between;    
-// }
-
-.icon-img, .city-ch {
-    display: inline;  
-}
-.address {
-    // margin-left: 142px;
+.header__top__two {
+    // background-color: rgb(216, 192, 255);
+    height: 92px;
 }
 
+.icon-img,
+.city-ch,
+.data-ch {
+    display: inline;
+}
+
+.city-img {
+    padding-right: 8px;
+}
+
+.arrow-img {
+    margin-right: 100.47px;
+}
+
+.city-ch {
+    padding-right: 7.5px;
+}
+
+.address-img {
+    padding-right: 8.97px;
+}
+
+.address-ch {
+    margin-right: 30.67px;
+}
+
+.time-img {
+    padding-right: 8.67px;
+}
+
+.work-time-ch {
+    margin-right: 53px;
+}
+
+.search-ch {
+    padding-right: 26px;
+}
+
+.t,
+.w {
+    padding-right: 10px;
+}
+
+.messengers,
 .search {
-    margin-right: 216px;
+    padding-right: 24px;
+    border-right: 1px solid #C7CCD2;
 }
-
-// .t, .w, .v {
-
-// }
 
 .logo,
 .company-name,
-.tel,
+.phone,
 .mail,
 .order-call {
     display: inline-block;
-    padding: 15px 4px 16px 50px;
-    background-color: yellowgreen;
+    // background-color: yellowgreen;
 }
 
-.header__phone {
-    display: flex;
-    flex-direction: column;
+.logo-img {
+    width: 77px;
+    height: 32px;
+    //     margin: 27px 84px 27px 0;
 }
 
-.logo_words {
-    vertical-align: top;
+.tel-img,
+.tel-number {
+    display: inline-block;
+}
+
+.tel-number {
+    margin-right: 76px;
 }
 
 .header__order-call {
@@ -100,6 +130,15 @@ body {
 .header__phone,
 .header__email {
     letter-spacing: 0.25px;
+}
+
+.mail {
+    margin-right: 142px;
+
+}
+
+.header__ask-question {
+    margin-right: 26px;
 }
 
 .header__content-inner {
@@ -119,7 +158,49 @@ body {
 
 .menu__btn {
     display: inline-block;
-    background-color: yellow;
+    // background-color: yellow;
+}
+
+.coub-btn {
+    display: inline-block;
+    background-color: #314C73;
+    width: 113px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.coub-img,
+.btn-ch {
+    display: inline-block;
+
+}
+
+.coub-img {
+    margin-right: 8px;
+}
+
+.coub-btn {
+    margin-right: 53px;
+
+}
+
+.header__content-inner {
+    height: 56px;
+}
+
+.menu__btn {
+    margin-right: 35px;
+}
+
+.contacts__btn {
+    margin-right: 190px;
+}
+
+.market-ch {
+    margin-right: 0 27.9px 0 24.62px;
+    border-right: 1px solid #C7CCD2;
+    
+    border-left: 1px solid #C7CCD2;
 }
 
 .slider {

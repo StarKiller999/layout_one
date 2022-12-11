@@ -18,17 +18,17 @@
 
                     <a class='city header__btn' href="#">
                         <img class='icon-img city-img' src="./img/Geolocation.svg" alt="">
-                        <div class="city-ch">Москва</div>
+                        <div class="city-ch data-ch">Москва</div>
                         <img class='icon-img arrow-img' src="./img/Down_Arrow_3_.svg" alt="">
                     </a>
 
                     <div class="address">
                         <img class='icon-img address-img' src="./img/Address.svg" alt="">
-                        <div class='address-ch'>г. Москва, ул. Рябиновая, 28А, стр 3</div>
+                        <div class='address-ch data-ch'>г. Москва, ул. Рябиновая, 28А, стр 3</div>
                     </div>
                     <div class='work_time'>
                         <img class='icon-img time-img' src="./img/Clock.svg" alt="">
-                        <div>ПН-ПТ 9:00-18:00</div>
+                        <div class='data-ch work-time-ch'>ПН-ПТ 9:00-18:00</div>
                     </div>
                     <div class="messengers">
                         <a class='icon-img header__btn t' href="#">
@@ -40,7 +40,7 @@
                     </div>
                     <div class='search'>
                         <a href="#"></a>
-                        <div>Поиск товаров и услуг</div>
+                        <div class='data-ch search-ch'>Поиск товаров и услуг</div>
                         <img class='icon-img search-img' src="./img/Search.svg" alt="">
                     </div>
                 </div>
@@ -50,22 +50,27 @@
                     <div class="container">
                         <div class="logo">
                             <a class='logo-logo' href="#">
-                                <img class='logo-img' src="./img/logo.svg" alt="">
+                                <img class='logo-img' src="./img/logo2.svg" alt="">
+                                <!-- <div class="text-logo">КОНВЕЙЕРНОЕ ОБОРУДОВАНИЕ</div> -->
                             </a>
                         </div>
 
-                        <div class="tel">
-                            <img class='tel-img' src="./img/Phone.svg" alt="">
-                            <a class='header__phone' href="tel:88002348606">8 (800) 234-86-06</a>
-                            <img class='tel-img' src="./img/Phone.svg" alt="">
-                            <a class='header__phone' href="tel:89803260136">8 (980) 326-01-36</a>
+                        <div class="phone">
+                            <div class="icon-img">
+                                <img class='tel-img' src="./img/Phone.svg" alt="">
+                                <a class='tel-number' href="tel:88002348606">8 (800) 234-86-06</a>
+                            </div>
+                            <div>
+                                <img class='icon-img' src="./img/Phone.svg" alt="">
+                                <a class='tel-number' href="tel:89803260136">8 (980) 326-01-36</a>
+                            </div>
                         </div>
                         <div class="mail">
                             <img class='mail-img' src="./img/Mail.svg" alt="">
                             <a class='header__mail' href="#">office.rtb@bk.ru</a>
                         </div>
                         <div class="order-call">
-                            <a class='header__ask-question' href="#">Есть вопросы? Ответим!</a>
+                            <a class='header__ask-question' href="#">Есть вопросы? <br>Ответим!</a>
                             <a class='header__order-call' href="#">Заказать звонок</a>
                         </div>
                     </div>
@@ -77,17 +82,20 @@
                 <nav class="menu">
                     <ul>
                         <li>
-                            <img class='coub-img' src="./img/Coubs.svg" alt="">
-
-                            <a class='menu__btn' href='#'>Каталог</a>
+                            
+                            <a class='coub-btn' href='#'>
+                                <img class='coub-img' src="./img/Coubs.svg" alt="">
+                                <div class='btn-ch'>Каталог</div>
+                            </a>
                         </li>
                         <li><a class='menu__btn' href='#'>Главная</a></li>
                         <li><a class='menu__btn' href='#'>Услуги</a></li>
                         <li><a class='menu__btn' href='#'>О компании</a></li>
                         <li><a class='menu__btn' href='#'>Производство</a></li>
                         <li><a class='menu__btn' href='#'>Доставка и оплата</a></li>
-                        <li><a class='menu__btn' href='#'>Контакты</a></li>
-                        <li><a class='menu__btn' href='#'><img class='market-img' src="./img/shopping_cart.svg"
+                        <li><a class='contacts__btn' href='#'>Контакты</a></li>
+                        <li><a class='menu__btn market-ch' href='#'>
+                            <img class='market-img' src="./img/shopping_cart.svg"
                                     alt=""></a></li>
                     </ul>
                 </nav>
