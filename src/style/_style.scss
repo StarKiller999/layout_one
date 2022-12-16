@@ -21,51 +21,77 @@ li {
 }
 
 body {
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
     background-color: $back;
     color: $text;
     font-size: 14px;
-    line-height: 19px;
-}
-
-.city,
-.address,
-.work_time,
-.messengers,
-.search {
-    display: inline-block; //block - стандартное значение, inline -в строчку, inline-block -блочные элементы в строчку;
-    padding: 15px 4px 16px 4px; // сверху справа снизу слева 
-    // background-color: orange;
 }
 
 .header__top__one {
-    height: 50px;
-    // background-color: pink;
+    line-height: 50px;
     border-bottom: 1px solid #C7CCD2;
 }
 
-.header__top__two {
-    // background-color: rgb(216, 192, 255);
-    height: 92px;
+.header__top__one:after {
+    // хз
+    content: '';
+    clear: both;
+    display: block;
 }
+
+.header__city,
+.header__address,
+.header__work_time,
+.header__messengers,
+.header__search {
+    display: inline-block; //block - стандартное значение, inline -в строчку, inline-block -блочные элементы в строчку;
+    // padding: 15px 4px 16px 4px; // сверху справа снизу слева 
+    // background-color: orange;
+
+}
+
+.icon-img {}
 
 .icon-img,
 .city-ch,
 .data-ch {
     display: inline;
+
+}
+
+.city-img,
+.address-img,
+.time-img,
+.search-img {
+    position: relative;
+    top: 3px;
+}
+
+.arrow-img {
+    position: relative;
+    top: -1px;
+}
+
+.messanger-img {
+    position: relative;
+    top: 10px;
 }
 
 .city-img {
+    // position: relative;
     padding-right: 8px;
+    // top: 0;
+}
+
+.city-ch {
+    padding-right: 7.5px;
 }
 
 .arrow-img {
     margin-right: 100.47px;
 }
 
-.city-ch {
-    padding-right: 7.5px;
-}
+
 
 .address-img {
     padding-right: 8.97px;
@@ -84,7 +110,8 @@ body {
 }
 
 .search-ch {
-    padding-right: 26px;
+    padding: 0 26px 0 24px;
+    color: #67696C;
 }
 
 .t,
@@ -92,37 +119,97 @@ body {
     padding-right: 10px;
 }
 
-.messengers,
-.search {
+// .t {
+//     position: relative;
+//     top: -7px;
+//     background-image: url('./img/Teleg.svg');
+// }
+// .t:hover {
+//     position: relative;
+//     top: -7px;
+//     background-image: url('./img/Teleg-c.svg');
+//     transition: all .3s;
+// }
+
+// .w {
+//     background-image: url('./img/Whatsapp.svg');
+// }
+// .w:hover {
+//     background-image: url('./img/Whatsapp-c.svg');
+// transition: all .3s;
+// }
+// .v {
+//     background-image: url('./img/Viber.svg');
+// }
+// .v:hover {
+//     background-image: url('./img/Viber-c.svg');
+// transition: all .3s;
+// }
+
+.header__messengers,
+.header__search {
     padding-right: 24px;
     border-right: 1px solid #C7CCD2;
+
+
 }
 
-.logo,
-.company-name,
-.phone,
-.mail,
-.order-call {
-    display: inline-block;
-    // background-color: yellowgreen;
+.header__top__two {
+    height: 92px;
 }
+
+.header__logo,
+.header__phone,
+.header__mail,
+.header__order-call {
+    display: inline-block;
+    // padding: 15px 4px 16px 4px;
+}
+
 
 .logo-img {
-    width: 77px;
-    height: 32px;
-    //     margin: 27px 84px 27px 0;
+    transform: scale(0.50);
+
+}
+
+.logo-logo {
+    position: relative;
+    left: -108px;
+    top: 0;
+    margin-right: -129.73px;
+    bottom: 0;
 }
 
 .tel-img,
 .tel-number {
     display: inline-block;
+    padding-top: 10px;
 }
+.tel-number, .mail, 
+.ask-question, .order-call{
+    color: #0C0C0C;
+}
+
+.first__number {
+    position: relative;
+    top: -20px;
+}
+.tel-img {
+    position: relative;
+    top: 2px;
+}
+
 
 .tel-number {
     margin-right: 76px;
 }
 
-.header__order-call {
+
+.order-call {
+    position: relative;
+top: -40px;
+// line-height: 36px;
+padding: 9px 31px 11px 32px; //сверху справа снизу слева
     border: 1px solid #182A44;
     border-radius: 5px;
 }
@@ -132,12 +219,16 @@ body {
     letter-spacing: 0.25px;
 }
 
-.mail {
+.header__mail {
+    position: relative;
+    top: -48px;
     margin-right: 142px;
 
 }
 
-.header__ask-question {
+.ask-question {
+    position: relative;
+    top: -28px;
     margin-right: 26px;
 }
 
@@ -146,70 +237,56 @@ body {
     color: #FFFFFF;
 }
 
+
+
 .menu li {
     display: inline;
+
 }
 
 .menu a {
     color: #FFFFFF;
     padding: 19px 18px;
-    font-size: 14px;
 }
 
 .menu__btn {
     display: inline-block;
-    // background-color: yellow;
 }
 
 .coub-btn {
-    display: inline-block;
     background-color: #314C73;
-    width: 113px;
-    height: 20px;
+    padding: 10px 16px 11px 38px;
+    margin-right: 69px;
     border-radius: 50px;
 }
 
 .coub-img,
 .btn-ch {
     display: inline-block;
-
+    // margin-right: 69px;
 }
+.coub-btn {}
 
 .coub-img {
     margin-right: 8px;
-}
-
-.coub-btn {
-    margin-right: 53px;
 
 }
-
-.header__content-inner {
-    height: 56px;
-}
-
-.menu__btn {
-    margin-right: 35px;
-}
-
 .contacts__btn {
-    margin-right: 190px;
+    margin-right: 214.62px;
 }
-
 .market-ch {
-    margin-right: 0 27.9px 0 24.62px;
+    // margin-right: 0 27.9px 0 24.62px;    
     border-right: 1px solid #C7CCD2;
-    
+
     border-left: 1px solid #C7CCD2;
 }
-
+  
 .slider {
     background-image: url('./img/image10.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 550px;
-    // background: #8E9296;
 }
 
 .slider-img {

@@ -8,6 +8,7 @@
     <title>Document</title>
     <!-- <link rel="icon" href='img/favicon.svg' type='image/svg-xml'>
     <link rel="icon" href='img/favicon.png' type='image/png'> -->
+    <!-- <link rel="stylesheet" href="style/normalize.css"> -->
 </head>
 
 <body>
@@ -16,21 +17,21 @@
             <div class="header__top__one">
                 <div class="container">
 
-                    <a class='city header__btn' href="#">
+                    <a class='header__city header__btn' href="#">
                         <img class='icon-img city-img' src="./img/Geolocation.svg" alt="">
                         <div class="city-ch data-ch">Москва</div>
                         <img class='icon-img arrow-img' src="./img/Down_Arrow_3_.svg" alt="">
                     </a>
 
-                    <div class="address">
+                    <div class="header__address">
                         <img class='icon-img address-img' src="./img/Address.svg" alt="">
                         <div class='address-ch data-ch'>г. Москва, ул. Рябиновая, 28А, стр 3</div>
                     </div>
-                    <div class='work_time'>
+                    <div class='header__work_time'>
                         <img class='icon-img time-img' src="./img/Clock.svg" alt="">
                         <div class='data-ch work-time-ch'>ПН-ПТ 9:00-18:00</div>
                     </div>
-                    <div class="messengers">
+                    <div class="header__messengers">
                         <a class='icon-img header__btn t' href="#">
                             <img class='messanger-img' src="./img/Teleg.svg" alt=""></a>
                         <a class='icon-img header__btn w' href="#">
@@ -38,7 +39,7 @@
                         <a class='icon-img header__btn v' href="#">
                             <img class='messanger-img' src="./img/Viber.svg" alt=""></a>
                     </div>
-                    <div class='search'>
+                    <div class='header__search'>
                         <a href="#"></a>
                         <div class='data-ch search-ch'>Поиск товаров и услуг</div>
                         <img class='icon-img search-img' src="./img/Search.svg" alt="">
@@ -48,30 +49,37 @@
             <div class="header__content">
                 <div class="header__top__two">
                     <div class="container">
-                        <div class="logo">
+                        <div class="header__logo">
                             <a class='logo-logo' href="#">
-                                <img class='logo-img' src="./img/logo2.svg" alt="">
+                                <img class='logo-img' src="./img/logo3.svg" alt="">
                                 <!-- <div class="text-logo">КОНВЕЙЕРНОЕ ОБОРУДОВАНИЕ</div> -->
                             </a>
                         </div>
 
-                        <div class="phone">
-                            <div class="icon-img">
+                        <div class="header__phone">
+                            <!-- <div class="first__number">
                                 <img class='tel-img' src="./img/Phone.svg" alt="">
                                 <a class='tel-number' href="tel:88002348606">8 (800) 234-86-06</a>
                             </div>
-                            <div>
+                            <div class="second__number">
                                 <img class='icon-img' src="./img/Phone.svg" alt="">
+                                <a class='tel-number' href="tel:89803260136">8 (980) 326-01-36</a>
+                            </div> -->
+                            <div class="first__number">
+                                <img class='tel-img' src="./img/Phone.svg" alt="">
+                                <a class='tel-number' href="tel:88002348606">8 (800) 234-86-06</a>
+                            <br>
+                                <img class='tel-img' src="./img/Phone.svg" alt="">
                                 <a class='tel-number' href="tel:89803260136">8 (980) 326-01-36</a>
                             </div>
                         </div>
-                        <div class="mail">
+                        <div class="header__mail">
                             <img class='mail-img' src="./img/Mail.svg" alt="">
-                            <a class='header__mail' href="#">office.rtb@bk.ru</a>
+                            <a class='mail' href="#">office.rtb@bk.ru</a>
                         </div>
-                        <div class="order-call">
-                            <a class='header__ask-question' href="#">Есть вопросы? <br>Ответим!</a>
-                            <a class='header__order-call' href="#">Заказать звонок</a>
+                        <div class="header__order-call">
+                            <a class='ask-question' href="#">Есть вопросы? <br>Ответим!</a>
+                            <a class='order-call' href="#">Заказать звонок</a>
                         </div>
                     </div>
                 </div>
@@ -82,10 +90,11 @@
                 <nav class="menu">
                     <ul>
                         <li>
-                            
-                            <a class='coub-btn' href='#'>
+                            <a class='menu__btn coub-btn' href='#'>
+                                <div class="">
                                 <img class='coub-img' src="./img/Coubs.svg" alt="">
                                 <div class='btn-ch'>Каталог</div>
+                            </div>
                             </a>
                         </li>
                         <li><a class='menu__btn' href='#'>Главная</a></li>
@@ -93,10 +102,11 @@
                         <li><a class='menu__btn' href='#'>О компании</a></li>
                         <li><a class='menu__btn' href='#'>Производство</a></li>
                         <li><a class='menu__btn' href='#'>Доставка и оплата</a></li>
-                        <li><a class='contacts__btn' href='#'>Контакты</a></li>
+                        <li><a class='menu__btn contacts__btn' href='#'>Контакты</a></li>
                         <li><a class='menu__btn market-ch' href='#'>
                             <img class='market-img' src="./img/shopping_cart.svg"
-                                    alt=""></a></li>
+                                    alt="">
+                                </a></li>
                     </ul>
                 </nav>
             </div>
