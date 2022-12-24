@@ -85,6 +85,7 @@ body {
 
 .city-ch {
     padding-right: 7.5px;
+    color: #0C0C0C;
 }
 
 .arrow-img {
@@ -116,35 +117,45 @@ body {
 
 .t,
 .w {
-    padding-right: 10px;
+    // padding-right: 10px;
 }
 
-// .t {
-//     position: relative;
-//     top: -7px;
-//     background-image: url('./img/Teleg.svg');
-// }
-// .t:hover {
-//     position: relative;
-//     top: -7px;
-//     background-image: url('./img/Teleg-c.svg');
-//     transition: all .3s;
-// }
+.t {
+    position: relative;
+    top: 1px;
+    background-image: url('./img/Teleg.svg');
+    padding: 10px 21px 5px 10px;
+    margin-right: 10px;
+}
+.t:hover {
+    // position: relative;
+    // top: 1px;
+    background-image: url('./img/Teleg-c.svg');
+    transition: all .3s;
+}
 
-// .w {
-//     background-image: url('./img/Whatsapp.svg');
-// }
-// .w:hover {
-//     background-image: url('./img/Whatsapp-c.svg');
-// transition: all .3s;
-// }
-// .v {
-//     background-image: url('./img/Viber.svg');
-// }
-// .v:hover {
-//     background-image: url('./img/Viber-c.svg');
-// transition: all .3s;
-// }
+.w {
+    background-image: url('./img/Whatsapp.svg');
+    position: relative;
+    top: 1px;
+    padding: 10px 20px 5px 10px;
+    margin-right: 10px;
+}
+.w:hover {
+    background-image: url('./img/Whatsapp-c.svg');
+transition: all .3s;
+}
+.v {
+    background-image: url('./img/Viber.svg');
+    position: relative;
+    top: 1px;
+    padding: 10px 20px 5px 10px;
+    margin-right: 10px;
+}
+.v:hover {
+    background-image: url('./img/Viber-c.svg');
+transition: all .3s;
+}
 
 .header__messengers,
 .header__search {
@@ -185,8 +196,11 @@ body {
     display: inline-block;
     padding-top: 10px;
 }
-.tel-number, .mail, 
-.ask-question, .order-call{
+
+.tel-number,
+.mail,
+.ask-question,
+.order-call {
     color: #0C0C0C;
 }
 
@@ -194,6 +208,7 @@ body {
     position: relative;
     top: -20px;
 }
+
 .tel-img {
     position: relative;
     top: 2px;
@@ -207,9 +222,9 @@ body {
 
 .order-call {
     position: relative;
-top: -40px;
-// line-height: 36px;
-padding: 9px 31px 11px 32px; //сверху справа снизу слева
+    top: -40px;
+    // line-height: 36px;
+    padding: 9px 31px 11px 32px; //сверху справа снизу слева
     border: 1px solid #182A44;
     border-radius: 5px;
 }
@@ -233,10 +248,10 @@ padding: 9px 31px 11px 32px; //сверху справа снизу слева
 }
 
 .header__content-inner {
+    height: 56px;
     background: $back_two;
     color: #FFFFFF;
 }
-
 
 
 .menu li {
@@ -246,41 +261,65 @@ padding: 9px 31px 11px 32px; //сверху справа снизу слева
 
 .menu a {
     color: #FFFFFF;
-    padding: 19px 18px;
+
 }
 
-.menu__btn {
-    display: inline-block;
+.menu__main,
+.menu__servises,
+.menu__about,
+.menu__production,
+.menu__delivering,
+.contacts__btn,
+.market-ch {
+    margin: 8px 35px 8px 0;
+    // 
+
 }
 
-.coub-btn {
+.frame {
     background-color: #314C73;
-    padding: 10px 16px 11px 38px;
-    margin-right: 69px;
+    padding: 10px 16px 11px 16px;
     border-radius: 50px;
+    margin: 8px 8px;
 }
 
 .coub-img,
 .btn-ch {
     display: inline-block;
-    // margin-right: 69px;
 }
-.coub-btn {}
+
+.coub-btn {
+    margin-right: 53px;
+}
 
 .coub-img {
     margin-right: 8px;
+    position: relative;
+    top: 2px;
 
 }
+
 .contacts__btn {
-    margin-right: 214.62px;
+    // margin-right: 214.62px;
+    margin-right: 185px;
 }
-.market-ch {
-    // margin-right: 0 27.9px 0 24.62px;    
-    border-right: 1px solid #C7CCD2;
 
+.border-market {
+    position: relative;
+    border-right: 1px solid #C7CCD2;
     border-left: 1px solid #C7CCD2;
+    height: 56px;
+    top: -12px;
 }
-  
+
+.market-img {
+    position: relative;
+    top: 17px;
+    padding: 0 27.9px 0 24.62px;
+
+}
+
+
 .slider {
     background-image: url('./img/image10.jpg');
     background-repeat: no-repeat;
@@ -303,7 +342,7 @@ padding: 9px 31px 11px 32px; //сверху справа снизу слева
     text-align: left;
     color: #FFFFFF;
     padding-top: 110px;
-    max-width: 561px;
+    // max-width: 561px;
     margin: 0;
 }
 
@@ -328,25 +367,123 @@ padding: 9px 31px 11px 32px; //сверху справа снизу слева
 
 .slider__btn {}
 
-.button {
-
+.button__various {
     display: inline;
-    padding: 4px 9px 4px 10px;
-    text-align: center;
+}
 
+.button {
+    color: #FFFFFF;
+    padding: 4px 9px 4px 10px;
     border: 1px solid #FFFFFF;
     border-radius: 3px;
 }
 
-.slider__menu {
+.button_y,
+.button_u {
+    margin-right: 15px;
+}
 
+.slider__button__menu {
+    color: #FFFFFF;
     text-align: center;
     background: #2E81C7;
     border-radius: 5px;
+    padding: 9px 31px 11px 31px;
+    margin-top: 35px;
 }
 
-.slider__choice,
-.arrow {
+.slider__btn,
+.arrow__btn {
     display: inline;
+    font-size: 16px;
+    color: #FFFFFF;
+
+}
+
+.choice__btn {
+    margin-top: 89px;
+}
+
+.choice__btn,
+.arrow {
+    // display: inline;
+}
+
+.slider__btn1 {
+    margin-right: 181px;
+}
+
+.slider__btn2 {
+    margin-right: 72px;
+}
+
+.slider__btn3 {
+    margin-right: 145px;
+}
+
+.arrow__btn {
+    position: relative;
+    top: 29px;
+}
+.arrow-num {
+    margin: 0 15px 0 15px;
+}
+
+.gray__line {
+    width: 955px;
+    border-bottom: 1px solid #C7CCD2;
+    margin-top: 10px;
+}
+
+.gray__line1 {
+    position: relative;
+    top: 7px;
+    width: 310px;
+    border-bottom: 3px solid #52ADFA;
+}
+
+.gray__line2 {
+    position: relative;
+    top: 4px;
+    margin-left: 310px;
+    width: 310px;
+    border-bottom: 3px solid transparent;
+}
+
+.gray__line3 {
+    position: relative;
+    top: 1px;
+    margin-left: 620px;
+    width: 310px;
+    border-bottom: 3px solid transparent;
+}
+
+
+.header__item{
+
+    display: inline-block;
+    max-width: 263px;
+    padding: 30px;
+    border-right: 1px solid #C7CCD2;
+    font-family: 'Manrope', sans-serif;
+}
+
+.header__item__one {
+    padding-left: 0;
+}
+.main__top__items {
+    border-bottom: 1px solid #C7CCD2;          
+}
+.num__p {
+    color: #2E81C7;
+    font-size: 18px;
+}
+h4 {
+    font-size: 18px;
+}
+
+.lorem {
+    // width: 210px;
+    // height: 132px;
     font-size: 16px;
 }
