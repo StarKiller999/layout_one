@@ -57,21 +57,28 @@
                         </div>
 
                         <div class="header__phone">
-                                <div class="first__number">
+                            <div class="first__number">
                                 <img class='tel-img' src="./img/Phone.svg" alt="">
-                                <a class='tel-number' href="tel:88002348606">8 (800) 234-86-06</a>
+                                <a class='tel-number' href="tel:00000000000">8 (800) 234-86-06</a>
                                 <br>
                                 <img class='tel-img' src="./img/Phone.svg" alt="">
-                                <a class='tel-number' href="tel:89803260136">8 (980) 326-01-36</a>
+                                <a class='tel-number' href="tel:00000000000">8 (980) 326-01-36</a>
                             </div>
                         </div>
                         <div class="header__mail">
                             <img class='mail-img' src="./img/Mail.svg" alt="">
-                            <a class='mail' href="#">office.rtb@bk.ru</a>
+                            <a class='mail' type='' href="mailto:__@__.ru">office.rtb@bk.ru</a>
                         </div>
                         <div class="header__order-call">
-                            <a class='ask-question' href="#">Есть вопросы? <br>Ответим!</a>
-                            <a class='order-call' href="#">Заказать звонок</a>
+                            <div class='ask-question' href="#">Есть вопросы? <br>Ответим!</div>
+                        </div>
+                        <div class="header__order-call-two">
+                            <a href="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10500.902039411158!2d2.2913514905137315!3d48.85391001859112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slv!2slv!4v1622011463926!5m2!1slv!2slv"
+                            data-fancybox
+                            data-type="iframe"
+                            data-preload="false"
+                            data-width="640"
+                            data-height="480" class='order-call' href="JavaScript:;">Заказать звонок</a>
                         </div>
                     </div>
                 </div>
@@ -107,9 +114,57 @@
     </header>
     <section class="slider">
         <div class="container">
-            <div class="slider__inner">
-                <div class="slider__item">
-                    <div class="slider__item-content">
+            <div class="slider__inner swiper">
+                <div class="slider__item swiper-wrapper">
+                    <div class="slider__item-content swiper-slide">
+                        <div class="slider__title">Шевронные ленты</div>
+                        <div class="slider__text">Наша компания производит как открытые, так и закрытые<br> ленты
+                            различных
+                            форм:</div>
+                        <div class="button__various">
+                            <a class="button button_y" href="#">Y</a>
+                            <a class="button button_u" href="#">U</a>
+                            <a class="button button_v" href="#">V</a>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="slider__button__menu" href="#">В каталог
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="slider__item-content swiper-slide">
+                        <div class="slider__title">Шевронные ленты</div>
+                        <div class="slider__text">Наша компания производит как открытые, так и закрытые<br> ленты
+                            различных
+                            форм:</div>
+                        <div class="button__various">
+                            <a class="button button_y" href="#">Y</a>
+                            <a class="button button_u" href="#">U</a>
+                            <a class="button button_v" href="#">V</a>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="slider__button__menu" href="#">В каталог
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="slider__item-content swiper-slide">
+                        <div class="slider__title">Шевронные ленты</div>
+                        <div class="slider__text">Наша компания производит как открытые, так и закрытые<br> ленты
+                            различных
+                            форм:</div>
+                        <div class="button__various">
+                            <a class="button button_y" href="#">Y</a>
+                            <a class="button button_u" href="#">U</a>
+                            <a class="button button_v" href="#">V</a>
+                        </div>
+                        <div class="catalog__btn">
+                            <a class="slider__button__menu" href="#">В каталог
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="slider__item-content swiper-slide">
                         <div class="slider__title">Шевронные ленты</div>
                         <div class="slider__text">Наша компания производит как открытые, так и закрытые<br> ленты
                             различных
@@ -134,18 +189,18 @@
                         <a class="slider__btn slider__btn2" href="#">Резиновые конвейерные ленты</a>
                         <a class="slider__btn slider__btn3" href="#">ПВХ конвейерные ленты</a>
 
-                        <a class="arrow__btn arrow-left" href="#">
+                        <a class="arrow__btn arrow-left swiper-button-prev" href="#">
                             <img class='arrow-img__left' src="./img/Arrow2.svg" alt="">
                         </a>
-                        <div class="arrow__btn arrow-num">1 / 3</div>
-                        <a class="arrow__btn" href="#">
-                            <img class='arrow-img__right arrow-right' src="./img/Arrow1.svg" alt="">
+                        <div class="arrow__btn arrow-num swiper-pagination">1 / 3</div>
+                        <a class="arrow__btn  arrow-right swiper-button-next" href="#">
+                            <img class='arrow-img__right' src="./img/Arrow1.svg" alt="">
                         </a>
 
                     </div>
 
                     <div class="line__choice">
-                        <div class="gray__line">
+                        <div class="gray__line swiper-scrollbar'">
                             <div class="gray__line1"></div>
                             <div class="gray__line2"></div>
                             <div class="gray__line3"></div>
@@ -164,42 +219,74 @@
     <main>
         <div class="main__top">
             <div class="main__top__items">
-            <div class="container">
-                
-                <div class="header__item header__item__one">
-                    <div class="num__p">01</div>
-                    <h4>Заголовок</h4>
-                    <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis ex.</p>
-                </div>
-                <div class="header__item">
-                    <div class="num__p">02</div>
-                    <h4>Заголовок</h4>
-                   <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis ex.</p>
-                </div>
-                <div class="header__item">
-                    <div class="num__p">03</div>
-                    <h4>Заголовок</h4>
-                    <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis ex.</p>
-                </div>
-                <div class="header__item">
-                    <div class="num__p">04</div>
-                    <h4>Заголовок</h4>
-                    <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis ex.</p>
-                </div>
-                <!-- <div class="header__item">
+                <div class="container">
+
+                    <div class="header__item header__item__one">
+                        <div class="num__p">01</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item">
+                        <div class="num__p">02</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item">
+                        <div class="num__p">03</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item">
+                        <div class="num__p">04</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
+                            ex.</p>
+                    </div>
+                    <!-- <div class="header__item">
                     <div class="num__p">05</div>
                     <h4>Заголовок</h4>
                     <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis ex.</p>
                 </div> -->
-            </div>
+
+                </div>
             </div>
         </div>
+        <!-- </div>
+        </div> -->
+
+        <div class="main__arrow">
+
+            <a class="main__arrow__left">
+                <img src="./img/Rect.svg" alt="" class="fon__one">
+
+                <img src="./img/Arrow-left.svg" alt="" class="arrow_left">
+            </a>
+            <a class="main__arrow__right">
+                <img src="./img/Rect.svg" alt="" class="fon__two">
+
+                <img src="./img/Arrow-right.svg" alt="" class="arrow_right">
+            </a>
+
         </div>
 
     </main>
     <footer>
 
     </footer>
+<div style="display: none;" id="model">
+<h2>Hello</h2>
+<p>You are awesom!</p></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/main.js">"main.js"</script>
+    
 </body>
 
 </html>
