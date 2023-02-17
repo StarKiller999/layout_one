@@ -1,27 +1,28 @@
-// $(function(){
-//     $('.slider_inner').slick();
-// })
-import Swiper, { Navigation, Pagination } from 'swiper';
+var slideIndex = 1;
+showSlides(slideIndex);
 
-Swiper.use({ Navigation, Pagination });
+// Вперед/назад элементы управления
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-const swiper = new Swiper('.swiper', {
+// Элементы управления миниатюрами изображений
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var lines = document.getElementsByClassName("line");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < lines.length; i++) {
+      lines[i].className = lines[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  lines[slideIndex-1].className += " active";
+}
