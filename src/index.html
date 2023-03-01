@@ -13,12 +13,20 @@
         <div class="header__top">
             <div class="header__top__one">
                 <div class="container">
+                    <div class="dropdown__select">
+                        <a class='header__city header__btn dropbtn__select' href="#">
+                            <img class='icon-img city-img' src="./img/Geolocation.svg" alt="">
+                            <select class="dropdown-content__select" name="town" id="s1">
+                                <option value="msk" href="#">Москва</option>
+                                <option value="blg" href="#">Белгород</option>
+                                <option value="rnd" href="#">Ростов-надо-ну</option>
+                                <option value="vrn" href="#">Воронеж</option>
 
-                    <a class='header__city header__btn' href="#">
-                        <img class='icon-img city-img' src="./img/Geolocation.svg" alt="">
-                        <div class="city-ch data-ch">Москва</div>
-                        <img class='icon-img arrow-img' src="./img/Down_Arrow_3_.svg" alt="">
-                    </a>
+                            </select>
+                            <!-- <div class="city-ch data-ch" value="Москва">Москва</div>
+                        <img class='icon-img arrow-img' src="./img/Down_Arrow_3_.svg" alt=""> -->
+                        </a>
+                    </div>
 
                     <div class="header__address">
                         <img class='icon-img address-img' src="./img/Address.svg" alt="">
@@ -84,11 +92,24 @@
                     <ul>
                         <li>
                             <a class='menu__btn coub-btn' href='#'>
-                                <div class="frame">
-                                    <img class='coub-img' src="./img/Coubs.svg" alt="">
-                                    <div class='btn-ch'>Каталог</div>
-                                </div>
+                                <button class="dropdown">
+
+                                    <div class='btn-ch dropbtn'>
+                                        <img class='coub-img' src="./img/Coubs.svg" alt="">Каталог
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <a href="#">Главная</a>
+                                        <a href="#">Услуги</a>
+                                        <a href="#">О компании</a>
+                                        <a href="#">Производство</a>
+                                        <a href="#">Доставка и оплата</a>
+                                        <a href="#">Контакты</a>
+                                        <a href="#">Корзина</a>
+
+                                    </div>
+                                </button>
                             </a>
+
                         </li>
                         <li><a class='menu__btn menu__main' href='#'>Главная</a></li>
                         <li><a class='menu__btn menu__servises' href='#'>Услуги</a></li>
@@ -183,9 +204,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Вперед и назад кнопки -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
         <div class="slider-controls container">
@@ -197,7 +215,7 @@
 
             </button>
         </div>
-        </div>
+        
 
         <br>
         <!-- Линии-->
@@ -206,73 +224,88 @@
             <span class="line" onclick="currentSlide(2)">Резиновые конвейерные ленты</span>
             <span class="line" onclick="currentSlide(3)">ПВХ конвейерные ленты</span>
         </div>
-        </div>
+        
     </section>
     <main>
         <div class="main__top">
-            <div class="main__top__items">
+            
                 <div class="container">
-
-                    <div class="header__item header__item__one">
-                        <div class="num__p">01</div>
-                        <h4>Заголовок</h4>
-                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
-                            ex.</p>
-                    </div>
-                    <div class="header__item">
-                        <div class="num__p">02</div>
-                        <h4>Заголовок</h4>
-                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
-                            ex.</p>
-                    </div>
-                    <div class="header__item">
-                        <div class="num__p">03</div>
-                        <h4>Заголовок</h4>
-                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
-                            ex.</p>
-                    </div>
-                    <div class="header__item">
-                        <div class="num__p">04</div>
-                        <h4>Заголовок</h4>
-                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br> turpis
-                            ex.</p>
+                    <div class="main__top__items"></div>
+                    <div id="carousel" class="carousel">
+                        <div class="header__item header__item__one" src="" id="lorem01">
+                            <div class="num__p">01</div>
+                            <h4>Заголовок</h4>
+                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                                turpis
+                                ex.</p>
+                        </div>
+                        <div class="header__item" src="" id="lorem02">
+                            <div class="num__p">02</div>
+                            <h4>Заголовок</h4>
+                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                                turpis
+                                ex.</p>
+                        </div>
+                        <div class="header__item" src="" id="lorem03">
+                            <div class="num__p">03</div>
+                            <h4>Заголовок</h4>
+                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                                turpis
+                                ex.</p>
+                        </div>
+                        <div class="header__item" src="" id="lorem04">
+                            <div class="num__p">04</div>
+                            <h4>Заголовок</h4>
+                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                                turpis
+                                ex.</p>
+                        </div>
+                        <div class="header__item" src="" id="lorem05">
+                            <div class="num__p">05</div>
+                            <h4>Заголовок</h4>
+                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                                turpis
+                                ex.</p>
+                        </div>
+                        <div class="header__item" src="" id="lorem06">
+                            <div class="num__p">06</div>
+                            <h4>Заголовок</h4>
+                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                                turpis
+                                ex.</p>
+                        </div>
+                        <div class="container">
+                            <div class="main__arrow">
+            
+                                <a class="main__arrow__left" onclick="plusLoremSlides(-1)">
+                                    <!-- <img src="./img/Rect.svg" alt="" class="fon__one"> -->
+            
+                                    <img src="./img/Arrow-left.svg" alt="" class="carousel-btn arrow_left">
+                                </a>
+                                <a class="main__arrow__right" onclick="plusLoremSlides(1)">
+                                    <!-- <img src="./img/Rect.svg" alt="" class="fon__two"> -->
+            
+                                    <img src="./img/Arrow-right.svg" alt="" class="carousel-btn arrow_right">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="main__arrow">
-
-                    <a class="main__arrow__left">
-                        <img src="./img/Rect.svg" alt="" class="fon__one">
-
-                        <img src="./img/Arrow-left.svg" alt="" class="arrow_left">
-                    </a>
-                    <a class="main__arrow__right">
-                        <img src="./img/Rect.svg" alt="" class="fon__two">
-
-                        <img src="./img/Arrow-right.svg" alt="" class="arrow_right">
-                    </a>
-
-
-
-                </div>
-
-            </div>
-
         </div>
-
-
-
     </main>
     <footer>
 
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/slider-lorem.js"></script>
 
 </body>
 
