@@ -13,55 +13,65 @@
         <div class="header__top">
             <div class="header__top__one">
                 <div class="container">
-                    <div class="dropdown__select">
-                        <a class='header__city header__btn dropbtn__select' href="#">
-                            <img class='icon-img city-img' src="./img/Geolocation.svg" alt="">
-                            <select class="dropdown-content__select" name="town" id="s1">
-                                <option value="msk" href="#">Москва</option>
-                                <option value="blg" href="#">Белгород</option>
-                                <option value="rnd" href="#">Ростов-надо-ну</option>
-                                <option value="vrn" href="#">Воронеж</option>
+                    <ul class="header__one header__list">
+                        <li class="dropdown__select">
+                            <a class='select-wraper header__city header__btn dropbtn__select' href="#">
+                                <!-- <img class='icon-img city-img' src="./img/Geolocation.svg" alt=""> -->
 
-                            </select>
-                            <!-- <div class="city-ch data-ch" value="Москва">Москва</div>
-                        <img class='icon-img arrow-img' src="./img/Down_Arrow_3_.svg" alt=""> -->
-                        </a>
-                    </div>
+                                <!-- <select class="dropdown-content__select" name="town" id="s1">
+                                        <option value="msk" href="#">Москва</option>
+                                        <option value="blg" href="#">Белгород</option>
+                                        <option value="rnd" href="#">Белгород</option>
+                                        <option value="vrn" href="#">Воронеж</option>
+                                    </select> -->
+                                <div class="form-group">
+                                    
+                                    <div class="dropdown">
+                                        <button class="dropdown__button">Москва</button>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item" data-value="msk">Москва</li>
+                                            <li class="dropdown__list-item" data-value="rnd">Ростов-надо-ну</li>
+                                            <li class="dropdown__list-item" data-value="blg">Белгород</li>
+                                            <li class="dropdown__list-item" data-value="vrn">Воронеж</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                    <div class="header__address">
-                        <img class='icon-img address-img' src="./img/Address.svg" alt="">
-                        <div class='address-ch data-ch'>г. Москва, ул. Рябиновая, 28А, стр 3</div>
-                    </div>
-                    <div class='header__work_time'>
-                        <img class='icon-img time-img' src="./img/Clock.svg" alt="">
-                        <div class='data-ch work-time-ch'>ПН-ПТ 9:00-18:00</div>
-                    </div>
-                    <div class="header__messengers">
-                        <a class='icon-img header__btn t' href="#">
-                        </a>
-                        <a class='icon-img header__btn w' href="#">
-                        </a>
-                        <a class='icon-img header__btn v' href="#">
-                        </a>
-                    </div>
-                    <div class='header__search'>
-                        <a href="#"></a>
-                        <div class='data-ch search-ch'>Поиск товаров и услуг</div>
-                        <img class='icon-img search-img' src="./img/Search.svg" alt="">
-                    </div>
+                            </a>
+                        </li>
+                        <li class="header__address">
+                            <img class='icon-img address-img' src="./img/Address.svg" alt="">
+                            <div class='address-ch data-ch'>г. Москва, ул. Рябиновая, 28А, стр 3</div>
+                        </li>
+                        <li class='header__work_time'>
+                            <img class='icon-img time-img' src="./img/Clock.svg" alt="">
+                            <div class='data-ch work-time-ch'>ПН-ПТ 9:00-18:00</div>
+                        </li>
+                        <li class="header__messengers">
+                            <a class='icon-img teleg' href="#">
+                            </a>
+                            <a class='icon-img watsapp' href="#">
+                            </a>
+                            <a class='icon-img viber' href="#">
+                            </a>
+                        </li>
+                        <li class='header__search'>
+                            <a href="#"></a>
+                            <div class='data-ch search-ch'>Поиск товаров и услуг</div>
+                            <img class='icon-img search-img' src="./img/Search.svg" alt="">
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="header__content">
-                <div class="header__top__two">
-                    <div class="container">
-                        <div class="header__logo">
-                            <a class='logo-logo' href="#">
+            <div class="header__top__two">
+                <div class="container">
+                    <ul class="header__two header__list">
+                        <li class="header__logo">
+                            <a class='logo' href="#">
                                 <img class='logo-img' src="./img/logo3.svg" alt="">
-                                <!-- <div class="text-logo">КОНВЕЙЕРНОЕ ОБОРУДОВАНИЕ</div> -->
                             </a>
-                        </div>
-
-                        <div class="header__phone">
+                        </li>
+                        <li class="header__phone">
                             <div class="first__number">
                                 <img class='tel-img' src="./img/Phone.svg" alt="">
                                 <a class='tel-number' href="tel:00000000000">8 (800) 234-86-06</a>
@@ -69,31 +79,29 @@
                                 <img class='tel-img' src="./img/Phone.svg" alt="">
                                 <a class='tel-number' href="tel:00000000000">8 (980) 326-01-36</a>
                             </div>
-                        </div>
-                        <div class="header__mail">
+                        </li>
+                        <li class="header__mail">
                             <img class='mail-img' src="./img/Mail.svg" alt="">
                             <a class='mail' type='' href="mailto:__@__.ru">office.rtb@bk.ru</a>
-                        </div>
-                        <div class="header__order-call">
+                        </li>
+                        <li class="header__order-call">
                             <div class='ask-question' href="#">Есть вопросы? <br>Ответим!</div>
-                        </div>
-                        <div class="header__order-call-two">
-                            <a href="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10500.902039411158!2d2.2913514905137315!3d48.85391001859112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1slv!2slv!4v1622011463926!5m2!1slv!2slv"
-                                data-fancybox data-type="iframe" data-preload="false" data-width="640" data-height="480"
-                                class='order-call' href="JavaScript:;">Заказать звонок</a>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="header__order-call-two">
+                            <a href="#" class='order-call'>Заказать звонок</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="header__content-inner">
+        </div>
+        <div class="header__nav">
             <div class="container">
                 <nav class="menu">
-                    <ul>
+                    <ul class="menu_one">
                         <li>
                             <a class='menu__btn coub-btn' href='#'>
                                 <button class="dropdown">
-
                                     <div class='btn-ch dropbtn'>
                                         <img class='coub-img' src="./img/Coubs.svg" alt="">Каталог
                                     </div>
@@ -132,24 +140,25 @@
             <div class="mySlides fade">
                 <div class="slider-image">
                     <img class="slider-img" src="./img/image10.jpg">
-                    <div class="slider-container">
-                        <div class="text">
-                            <div class="slider__title">Шевронные ленты</div>
-                            <div class="slider__text">Наша компания производит как открытые, так и закрытые<br>
-                                ленты
-                                различных
-                                форм:</div>
-                            <div class="button__various">
-                                <a class="slider-button button_y" onclick="currentSlide(1)">Y</a>
-                                <a class="slider-button button_u" onclick="currentSlide(2)">U</a>
-                                <a class="slider-button button_v" onclick="currentSlide(3)">V</a>
-                            </div>
-                            <div class="catalog__btn">
-                                <a class="slider__button__menu" href="#">В каталог
-                                </a>
+                    <div class="container">
+                        <div class="slider-container">
+                            <div class="text">
+                                <div class="slider__title">Шевронные ленты</div>
+                                <div class="slider__text">Наша компания производит как открытые, так и закрытые<br>
+                                    ленты
+                                    различных
+                                    форм:</div>
+                                <div class="button__various">
+                                    <a class="slider-button button_y" onclick="currentSlide(1)">Y</a>
+                                    <a class="slider-button button_u" onclick="currentSlide(2)">U</a>
+                                    <a class="slider-button button_v" onclick="currentSlide(3)">V</a>
+                                </div>
+                                <div class="catalog__btn">
+                                    <a class="slider__button__menu" href="#">В каталог
+                                    </a>
+                                </div>
                             </div>
                         </div>
-
 
                     </div>
                 </div>
@@ -157,25 +166,26 @@
             <div class="mySlides fade">
                 <div class="slider-image">
                     <img class="slider-img" src="./img/image11.jpg">
-                    <div class="slider-container">
-                        <div class="text">
-                            <div class="slider__title">Резиновые конвейерные ленты</div>
-                            <div class="slider__text">Наша компания производит как открытые, так и закрытые<br>
-                                ленты
-                                различных
-                                форм:
-                            </div>
-                            <div class="button__various">
-                                <a class="slider-button button_y" onclick="currentSlide(1)">Y</a>
-                                <a class="slider-button button_u" onclick="currentSlide(2)">U</a>
-                                <a class="slider-button button_v" onclick="currentSlide(3)">V</a>
-                            </div>
-                            <div class="catalog__btn">
-                                <a class="slider__button__menu" href="#">В каталог
-                                </a>
+                    <div class="container">
+                        <div class="slider-container">
+                            <div class="text">
+                                <div class="slider__title">Резиновые конвейерные ленты</div>
+                                <div class="slider__text">Наша компания производит как открытые, так и закрытые<br>
+                                    ленты
+                                    различных
+                                    форм:
+                                </div>
+                                <div class="button__various">
+                                    <a class="slider-button button_y" onclick="currentSlide(1)">Y</a>
+                                    <a class="slider-button button_u" onclick="currentSlide(2)">U</a>
+                                    <a class="slider-button button_v" onclick="currentSlide(3)">V</a>
+                                </div>
+                                <div class="catalog__btn">
+                                    <a class="slider__button__menu" href="#">В каталог
+                                    </a>
+                                </div>
                             </div>
                         </div>
-
 
 
                     </div>
@@ -184,21 +194,23 @@
             <div class="mySlides fade">
                 <div class="slider-image">
                     <img class="slider-img" src="./img/image12.jpg">
-                    <div class="slider-container">
-                        <div class="text">
-                            <div class="slider__title">ПВХ конвейерные ленты</div>
-                            <div class="slider__text">Наша компания производит как открытые, так и закрытые<br>
-                                ленты
-                                различных
-                                форм:</div>
-                            <div class="button__various">
-                                <a class="slider-button button_y" onclick="currentSlide(1)">Y</a>
-                                <a class="slider-button button_u" onclick="currentSlide(2)">U</a>
-                                <a class="slider-button button_v" onclick="currentSlide(3)">V</a>
-                            </div>
-                            <div class="catalog__btn">
-                                <a class="slider__button__menu" href="#">В каталог
-                                </a>
+                    <div class="container">
+                        <div class="slider-container">
+                            <div class="text">
+                                <div class="slider__title">ПВХ конвейерные ленты</div>
+                                <div class="slider__text">Наша компания производит как открытые, так и закрытые<br>
+                                    ленты
+                                    различных
+                                    форм:</div>
+                                <div class="button__various">
+                                    <a class="slider-button button_y" onclick="currentSlide(1)">Y</a>
+                                    <a class="slider-button button_u" onclick="currentSlide(2)">U</a>
+                                    <a class="slider-button button_v" onclick="currentSlide(3)">V</a>
+                                </div>
+                                <div class="catalog__btn">
+                                    <a class="slider__button__menu" href="#">В каталог
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,7 +227,7 @@
 
             </button>
         </div>
-        
+
 
         <br>
         <!-- Линии-->
@@ -224,76 +236,75 @@
             <span class="line" onclick="currentSlide(2)">Резиновые конвейерные ленты</span>
             <span class="line" onclick="currentSlide(3)">ПВХ конвейерные ленты</span>
         </div>
-        
+
     </section>
     <main>
         <div class="main__top">
-            
-                <div class="container">
-                    <div class="main__top__items"></div>
-                    <div id="carousel" class="carousel">
-                        <div class="header__item header__item__one" src="" id="lorem01">
-                            <div class="num__p">01</div>
-                            <h4>Заголовок</h4>
-                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
-                                turpis
-                                ex.</p>
-                        </div>
-                        <div class="header__item" src="" id="lorem02">
-                            <div class="num__p">02</div>
-                            <h4>Заголовок</h4>
-                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
-                                turpis
-                                ex.</p>
-                        </div>
-                        <div class="header__item" src="" id="lorem03">
-                            <div class="num__p">03</div>
-                            <h4>Заголовок</h4>
-                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
-                                turpis
-                                ex.</p>
-                        </div>
-                        <div class="header__item" src="" id="lorem04">
-                            <div class="num__p">04</div>
-                            <h4>Заголовок</h4>
-                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
-                                turpis
-                                ex.</p>
-                        </div>
-                        <div class="header__item" src="" id="lorem05">
-                            <div class="num__p">05</div>
-                            <h4>Заголовок</h4>
-                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
-                                turpis
-                                ex.</p>
-                        </div>
-                        <div class="header__item" src="" id="lorem06">
-                            <div class="num__p">06</div>
-                            <h4>Заголовок</h4>
-                            <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
-                                condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
-                                turpis
-                                ex.</p>
-                        </div>
-                        <div class="container">
-                            <div class="main__arrow">
-            
-                                <a class="main__arrow__left" onclick="plusLoremSlides(-1)">
-                                    <!-- <img src="./img/Rect.svg" alt="" class="fon__one"> -->
-            
-                                    <img src="./img/Arrow-left.svg" alt="" class="carousel-btn arrow_left">
-                                </a>
-                                <a class="main__arrow__right" onclick="plusLoremSlides(1)">
-                                    <!-- <img src="./img/Rect.svg" alt="" class="fon__two"> -->
-            
-                                    <img src="./img/Arrow-right.svg" alt="" class="carousel-btn arrow_right">
-                                </a>
-                            </div>
+
+            <div class="container">
+                <div class="main__top__items"></div>
+                <div id="carousel" class="carousel">
+                    <div class="header__item header__item__one" src="" id="lorem01">
+                        <div class="num__p">01</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                            turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item" src="" id="lorem02">
+                        <div class="num__p">02</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                            turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item" src="" id="lorem03">
+                        <div class="num__p">03</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                            turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item" src="" id="lorem04">
+                        <div class="num__p">04</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                            turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item" src="" id="lorem05">
+                        <div class="num__p">05</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                            turpis
+                            ex.</p>
+                    </div>
+                    <div class="header__item" src="" id="lorem06">
+                        <div class="num__p">06</div>
+                        <h4>Заголовок</h4>
+                        <p class="lorem">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.<br> Nam
+                            condimentum pretium <br>rutrum. Phasellus rutrum <br>vulputate blandit. Nulla vel<br>
+                            turpis
+                            ex.</p>
+                    </div>
+                    <div class="container">
+                        <div class="main__arrow">
+
+                            <a class="main__arrow__left" onclick="plusLoremSlides(-1)">
+                                <!-- <img src="./img/Rect.svg" alt="" class="fon__one"> -->
+
+                                <img src="./img/Arrow-left.svg" alt="" class="carousel-btn arrow_left">
+                            </a>
+                            <a class="main__arrow__right" onclick="plusLoremSlides(1)">
+                                <!-- <img src="./img/Rect.svg" alt="" class="fon__two"> -->
+
+                                <img src="./img/Arrow-right.svg" alt="" class="carousel-btn arrow_right">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -306,6 +317,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/slider-lorem.js"></script>
+    <script src="js/select-dropdown.js"></script>
 
 </body>
 

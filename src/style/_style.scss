@@ -1,15 +1,9 @@
-// *, 
-// ::before,
-// ::after {
-// box-sizing: border-box;
-// }
-
-
 html {
     box-sizing: border-box;
 }
 
 a {
+    color: inherit;
     text-decoration: none; // убирает подчеркивания у ссылок
     display: inline-block; // строчно-блончый элемент
 }
@@ -22,8 +16,8 @@ li {
 }
 
 .container {
-    max-width: 1400px;// max ширина
-
+    // max-width: 1400px;// max ширина
+    max-width: 1110px;
     margin: 0 auto; // центрировать 0 - значение сверху и сниху auto - значение слева и справа;
     padding: 0 142px; // отступ сверху-снизу, справа-слева;
 }
@@ -40,12 +34,6 @@ body {
     border-bottom: 1px solid #C7CCD2;
 }
 
-.header__top__one:after {
-    // хз
-    content: '';
-    clear: both;
-    display: block;
-}
 
 .header__city,
 .header__address,
@@ -54,11 +42,8 @@ body {
 .header__search {
     display: inline-block; //block - стандартное значение, inline -в строчку, inline-block -блочные элементы в строчку;
     // padding: 15px 4px 16px 4px; // сверху справа снизу слева 
-    // background-color: orange;
 
 }
-
-.icon-img {}
 
 .icon-img,
 .city-ch,
@@ -66,24 +51,54 @@ body {
     display: inline;
 
 }
+
 /* Button */
 select {
     border: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    padding: 16px 60px 17px 0;
+    cursor: pointer;
+background: url('./img/Down_Arrow_3_.svg') no-repeat right;
+background-position-x: calc(40%);
 }
+select::-ms-expand {
+    display: none;
+}
+// .select-wraper {
+//     position: relative;
+// }
+.select-wraper::before {
+    // content: "";
+    // position: absolute;
+    // top: 50%;
+    // right: 15px;
+    // transform: translateY(-50%);
+    // display: block;
+    // width: 10px;
+    // height: 15px;
+    // background-color: #67696C;
+}
+
 /* Кнопка выпадающего списка */
 .dropbtn__select {
     background-color: #F5F5F5;
     color: #F5F5F5;
-  }
-  
+}
+
 //   /* Контейнер <div> - необходим для размещения выпадающего содержимого */
-  .dropdown__select {
+.dropdown__select {
     position: relative;
     display: inline-block;
-  }
-  .dropdown-content__select {
+}
+
+.dropdown-content__select {
     background-color: #F5F5F5;
-  }
+}
+
 
 .city-img,
 .address-img,
@@ -93,32 +108,9 @@ select {
     top: 3px;
 }
 
-.arrow-img {
-    position: relative;
-    top: -1px;
-}
-
-.messanger-img {
-    position: relative;
-    top: 10px;
-}
-
 .city-img {
-    // position: relative;
     padding-right: 8px;
-    // top: 0;
 }
-
-.city-ch {
-    padding-right: 7.5px;
-    color: #0C0C0C;
-}
-
-.arrow-img {
-    margin-right: 100.47px;
-}
-
-
 
 .address-img {
     padding-right: 8.97px;
@@ -137,16 +129,11 @@ select {
 }
 
 .search-ch {
-    padding: 0 26px 0 24px;
+    padding-right: 26px;
     color: #67696C;
 }
 
-.t,
-.w {
-    // padding-right: 10px;
-}
-
-.t {
+.teleg {
     position: relative;
     top: 1px;
     background-image: url('./img/Teleg.svg');
@@ -154,14 +141,17 @@ select {
     margin-right: 10px;
 }
 
-.t:hover {
-    // position: relative;
-    // top: 1px;
+.teleg:hover {
     background-image: url('./img/Teleg-c.svg');
     transition: all .3s;
 }
 
-.w {
+.teleg:active {
+    background-image: url('./img/Teleg-a.svg');
+    transition: all .3s;
+}
+
+.watsapp {
     background-image: url('./img/Whatsapp.svg');
     position: relative;
     top: 1px;
@@ -169,12 +159,17 @@ select {
     margin-right: 10px;
 }
 
-.w:hover {
+.watsapp:hover {
     background-image: url('./img/Whatsapp-c.svg');
     transition: all .3s;
 }
 
-.v {
+.watsapp:active {
+    background-image: url('./img/Whatsapp-a.svg');
+    transition: all .3s;
+}
+
+.viber {
     background-image: url('./img/Viber.svg');
     position: relative;
     top: 1px;
@@ -182,21 +177,28 @@ select {
     margin-right: 10px;
 }
 
-.v:hover {
+.viber:hover {
     background-image: url('./img/Viber-c.svg');
     transition: all .3s;
 }
 
-.header__messengers,
+.viber:active {
+    background-image: url('./img/Viber-a.svg');
+    transition: all .3s;
+}
+
 .header__search {
-    padding-right: 24px;
+    float: right;
+    padding: 0 26px 0 24px;
     border-right: 1px solid #C7CCD2;
+    border-left: 1px solid #C7CCD2;
 
 
 }
 
 .header__top__two {
     height: 92px;
+    color: #0C0C0C;
 }
 
 .header__logo,
@@ -205,24 +207,25 @@ select {
 .header__order-call,
 .header__order-call-two {
     display: inline-block;
-    // padding: 15px 4px 16px 4px;
+    padding: 15px 4px 16px 4px;
 }
 
 
-.logo-img {
-    transform: scale(0.50);
-}
-.logo-img {
-    height: 81.96px;
-    weight: 500px;
-}
+// .logo-img {
+//     transform: scale(0.50);
+// }
+// .logo-img {
+//     height: 81.96px;
+//     weight: 500px;
+// }
 
-.logo-logo {
-    position: relative;
-    left: -108px;
-    top: 0;
-    margin-right: -129.73px;
-    bottom: 0;
+.logo {
+    //     position: relative;
+    //     left: -108px;
+    //     top: 0;
+    //     margin-right: -129.73px;
+    //     bottom: 0;
+    margin-right: 80.26px;
 }
 
 .tel-img,
@@ -231,38 +234,19 @@ select {
     padding-top: 10px;
 }
 
-.tel-number,
-.mail,
-.ask-question,
-.order-call {
-    color: #0C0C0C;
-}
 
-.first__number {
-    position: relative;
-    top: -20px;
-}
+// .first__number {
+//     position: relative;
+//     top: -20px;
+// }
 
 .tel-img {
     position: relative;
     top: 2px;
 }
 
-
-.tel-number {}
-
-
-.order-call {
-    position: relative;
-    top: -40px;
-    // line-height: 36px;
-    padding: 9px 31px 11px 32px; //сверху справа снизу слева
-    border: 1px solid #182A44;
-    border-radius: 5px;
-}
-
 .header__phone {
-    margin-right: 76px;
+    margin-right: 70px;
 }
 
 .header__phone,
@@ -272,23 +256,41 @@ select {
 
 .header__mail {
     position: relative;
-    top: -48px;
-    margin-right: 142px;
+    top: -28px;
+    margin-right: 100px;
 
 }
 
 .ask-question {
     position: relative;
-    top: -28px;
-    margin-right: 26px;
+    top: -18px;
+    margin-right: 20px;
 }
 
-.header__content-inner {
+.order-call {
+
+    position: relative;
+    top: 10px;
+    // line-height: 36px;
+    padding: 9px 31px 11px 32px; //сверху справа снизу слева
+    border: 1px solid #182A44;
+    border-radius: 5px;
+}
+
+.header__order-call-two {
+    float: right;
+}
+
+.header__nav {
     height: 56px;
     background: $back_two;
     color: #FFFFFF;
 }
 
+.menu_one {
+    // display: flex;
+    // gap: 0 35px;
+}
 
 .menu li {
     display: inline;
@@ -298,16 +300,17 @@ select {
     color: #FFFFFF;
 }
 .menu__btn {
-    margin: 8px 0;
+    // margin: 8px 0;
 }
-
+// .coub-btn,
 .menu__main,
 .menu__servises,
 .menu__about,
 .menu__production,
 .menu__delivering,
 .contacts__btn {
-    margin: 8px 35px 8px 0;
+    // margin: 8px 35px 8px 0;
+    margin: 8px 0;
     padding: 10px 16px 11px 16px;
     border-radius: 50px;
 }
@@ -317,7 +320,9 @@ select {
 .menu__about:hover,
 .menu__production:hover,
 .menu__delivering:hover,
-.contacts__btn:hover {background-color: #314C73;}
+.contacts__btn:hover {
+    background-color: #314C73;
+}
 
 .coub-img,
 .btn-ch {
@@ -329,6 +334,22 @@ select {
     position: relative;
     top: 2px;
 }
+
+.market-ch {
+float: right;
+}
+.border-market {
+    border-right: 1px solid #C7CCD2;
+    border-left: 1px solid #C7CCD2;
+    height: 56px;
+}
+
+.market-img {
+    padding: 0 27.9px 0 24.62px;
+    margin: 18px 0;
+
+}
+
 /* Кнопка выпадающего списка */
 .dropbtn {
     padding: 10px 16px 11px 16px;
@@ -337,15 +358,17 @@ select {
     // color: white;
     // padding: 16px;
     // font-size: 16px;
-    
-  }
-  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
 .dropdown {
     position: relative;
     display: inline-block;
     background-color: #182A44;
     border: none;
-  }
+}
+
 /* Выпадающее содержимое (скрыто по умолчанию) */
 .dropdown-content {
     display: none;
@@ -354,45 +377,38 @@ select {
     padding: 10px 16px 11px 16px;
     border-radius: 50px;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  /* Ссылки внутри выпадающего списка */
+}
+
+/* Ссылки внутри выпадающего списка */
 .dropdown-content a {
     padding: 10px 16px 11px 16px;
     border-radius: 50px;
     text-decoration: none;
     display: block;
-  }
-  /* Изменение цвета выпадающих ссылок при наведении курсора */
-.dropdown-content a:hover {background-color: #314C73;
+}
 
-    background-color: #314C73;}
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    background-color: #314C73;
+
+    background-color: #314C73;
+}
 
 /* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {background-color: #314C73;}
+.dropdown:hover .dropbtn {
+    background-color: #314C73;
+}
 
 .contacts__btn {
     // margin-right: 214.62px;
-    margin-right: 185px;
-}
-
-.border-market {
-    position: relative;
-    border-right: 1px solid #C7CCD2;
-    border-left: 1px solid #C7CCD2;
-    height: 56px;
-    top: -12px;
-}
-
-.market-img {
-    position: relative;
-    top: 17px;
-    padding: 0 27.9px 0 24.62px;
-
+    // margin-right: 185px;
 }
 
 
@@ -402,19 +418,22 @@ select {
 /* Контейнер слайд-шоу  накладывает текст на изображение слайда*/
 .slider-image {
     position: relative;
-	width: 100%; 
+    width: 100%;
 }
+
 .slider-container {
-	position	: absolute;
-	top		: 200px;
-	// left		: 0;
-	// width		: 100%;
-    max-width: 1400px;
+    position: absolute;
+
+    top: 200px;
+    // left		: 0;
+    // width		: 100%;
+    // max-width: 1110px;
     margin: 0 auto;
-    padding: 0 142px;
+    // padding: 0 142px;
     // color: #FFFFFF;
 
 }
+
 // От сих переработать
 
 /* Контейнер слайд-шоу */
@@ -446,8 +465,8 @@ select {
 
 /* Номер текста (1/3 и т.д.) */
 .numbertext {
-    position: relative; 
-     
+    position: relative;
+
     top: 50;
     background-color: red;
 }
@@ -464,6 +483,7 @@ select {
     transition: background-color 0.6s ease;
     // margin-top: 10px;
 }
+
 .active,
 .line:hover {
     background-color: #52ADFA;
@@ -476,9 +496,10 @@ select {
     text-align: right;
 
 }
+
 .arrow-btn {
     display: inline-block;
-    
+
     background-color: #FFFFFF;
 }
 
@@ -597,4 +618,3 @@ button.slider-next {
 .slider__btn3 {
     margin-right: 145px;
 }
-
