@@ -52,54 +52,6 @@ body {
 
 }
 
-/* Button */
-select {
-    border: 0;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: transparent;
-    outline: none;
-    padding: 16px 60px 17px 0;
-    cursor: pointer;
-background: url('./img/Down_Arrow_3_.svg') no-repeat right;
-background-position-x: calc(40%);
-}
-select::-ms-expand {
-    display: none;
-}
-// .select-wraper {
-//     position: relative;
-// }
-.select-wraper::before {
-    // content: "";
-    // position: absolute;
-    // top: 50%;
-    // right: 15px;
-    // transform: translateY(-50%);
-    // display: block;
-    // width: 10px;
-    // height: 15px;
-    // background-color: #67696C;
-}
-
-/* Кнопка выпадающего списка */
-.dropbtn__select {
-    background-color: #F5F5F5;
-    color: #F5F5F5;
-}
-
-//   /* Контейнер <div> - необходим для размещения выпадающего содержимого */
-.dropdown__select {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content__select {
-    background-color: #F5F5F5;
-}
-
-
 .city-img,
 .address-img,
 .time-img,
@@ -131,6 +83,9 @@ select::-ms-expand {
 .search-ch {
     padding-right: 26px;
     color: #67696C;
+    border: none;
+    background: #F5F5F5;
+    outline: none;
 }
 
 .teleg {
@@ -286,133 +241,6 @@ select::-ms-expand {
     background: $back_two;
     color: #FFFFFF;
 }
-
-.menu_one {
-    // display: flex;
-    // gap: 0 35px;
-}
-
-.menu li {
-    display: inline;
-}
-
-.menu a {
-    color: #FFFFFF;
-}
-.menu__btn {
-    // margin: 8px 0;
-}
-// .coub-btn,
-.menu__main,
-.menu__servises,
-.menu__about,
-.menu__production,
-.menu__delivering,
-.contacts__btn {
-    // margin: 8px 35px 8px 0;
-    margin: 8px 0;
-    padding: 10px 16px 11px 16px;
-    border-radius: 50px;
-}
-
-.menu__main:hover,
-.menu__servises:hover,
-.menu__about:hover,
-.menu__production:hover,
-.menu__delivering:hover,
-.contacts__btn:hover {
-    background-color: #314C73;
-}
-
-.coub-img,
-.btn-ch {
-    // display: inline-block;
-}
-
-.coub-img {
-    margin-right: 8px;
-    position: relative;
-    top: 2px;
-}
-
-.market-ch {
-float: right;
-}
-.border-market {
-    border-right: 1px solid #C7CCD2;
-    border-left: 1px solid #C7CCD2;
-    height: 56px;
-}
-
-.market-img {
-    padding: 0 27.9px 0 24.62px;
-    margin: 18px 0;
-
-}
-
-/* Кнопка выпадающего списка */
-.dropbtn {
-    padding: 10px 16px 11px 16px;
-    border-radius: 50px;
-    // margin: 8px 8px;
-    // color: white;
-    // padding: 16px;
-    // font-size: 16px;
-
-}
-
-/* Контейнер <div> - необходим для размещения выпадающего содержимого */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    background-color: #182A44;
-    border: none;
-}
-
-/* Выпадающее содержимое (скрыто по умолчанию) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #182A44;
-    padding: 10px 16px 11px 16px;
-    border-radius: 50px;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Ссылки внутри выпадающего списка */
-.dropdown-content a {
-    padding: 10px 16px 11px 16px;
-    border-radius: 50px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Изменение цвета выпадающих ссылок при наведении курсора */
-.dropdown-content a:hover {
-    background-color: #314C73;
-
-    background-color: #314C73;
-}
-
-/* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {
-    background-color: #314C73;
-}
-
-.contacts__btn {
-    // margin-right: 214.62px;
-    // margin-right: 185px;
-}
-
-
-
 //Слайдер 
 
 /* Контейнер слайд-шоу  накладывает текст на изображение слайда*/
@@ -424,13 +252,8 @@ float: right;
 .slider-container {
     position: absolute;
 
-    top: 200px;
-    // left		: 0;
-    // width		: 100%;
-    // max-width: 1110px;
+    top: 100px;
     margin: 0 auto;
-    // padding: 0 142px;
-    // color: #FFFFFF;
 
 }
 
@@ -443,18 +266,14 @@ float: right;
     width: 100%;
     filter: brightness(30%)
 }
+.slideshow-container {
+    position: relative;
+}
 
 /* Скрыть изображения по умолчанию */
 .mySlides {
     display: none;
 }
-
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
 
 /* Подпись текст */
 .text {
@@ -465,23 +284,44 @@ float: right;
 
 /* Номер текста (1/3 и т.д.) */
 .numbertext {
-    position: relative;
+    margin: 0 15px;
+    // position: relative;
 
-    top: 50;
-    background-color: red;
+    top: 10;
 }
 
 /* Линия выбора*/
+.slider-text {
+    color: #FFFFFF;
+    display: inline-block;
+}
+.shevron, .konv, .pvh {
+    float: left;
+}
+.shevron {
+    margin-right: 180px;
+}
+.konv {
+    margin-right: 150px;
+}
+
+
 .line {
+    
     cursor: pointer;
     height: 3px;
-    width: 325px;
+    width: 300px;
     margin: 0;
     padding: 0;
     background-color: #C7CCD2;
+    color: #FFFFFF;
     display: inline-block;
     transition: background-color 0.6s ease;
+    // top: 100px;
     // margin-top: 10px;
+    float: left;
+    text-align: left;
+    // text-decoration: underline;
 }
 
 .active,
@@ -492,17 +332,23 @@ float: right;
 // До сих нужно переработать
 
 .slider-controls {
-    position: relative;
-    text-align: right;
+    position: absolute;
+    top: 480px;
+    // text-align: right;
+    z-index: 1;
 
 }
 
 .arrow-btn {
     display: inline-block;
-
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    
+    // float: right;
 }
 
+.prev {
+    margin-left: 43px;
+}
 
 .slider__title {
     // text-transform: uppercase; // верхний регистр
@@ -546,24 +392,25 @@ float: right;
     text-indent: -9999em;
     background-color: transparent;
     background-repeat: no-repeat;
-    color: red;
 }
 
 
-button.slider-previous {
-    width: 15px;
+.slider-previous {
+    width: 20px;
     height: 15px;
-    background-color: red;
-    float: right;
-    background-image: url("./img/Arrow-left.svg");
+    // background-color: red;
+    // float: right;
+    background-image: url("./img/Arrow-slider-left.svg");
+    background-repeat: no-repeat;
 }
 
-button.slider-next {
-    width: 15px;
+
+
+.slider-next {
+    width: 25px;
     height: 15px;
-    background-color: red;
-    float: right;
-    background-image: url("./img/Arrow-right.svg");
+    background-image: url("./img/Arrow-slider-right.svg"); 
+    background-repeat: no-repeat; 
 }
 
 
@@ -589,23 +436,10 @@ button.slider-next {
     margin-top: 35px;
 }
 
-.slider__btn,
-.arrow__btn {
-    font-size: 16px;
-    // color: #FFFFFF;
-    color: red;
-
-}
-
-
 .choice__btn {
     margin-top: 89px;
 }
 
-.choice__btn,
-.arrow {
-    // display: inline;
-}
 
 .slider__btn1 {
     margin-right: 181px;
