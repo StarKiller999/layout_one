@@ -278,18 +278,37 @@ body {
 /* Подпись текст */
 .text {
     color: #FFFFFF;
-
     width: 100%;
 }
 
 /* Номер текста (1/3 и т.д.) */
 .numbertext {
+    position: relative;
     margin: 0 15px;
-    // position: relative;
-
-    top: 10;
+    top: 9px;
+}
+.page-number {
+    display: inline-block;
+}
+.prev, .next {
+    position: relative;
+    top: 14px;
+}
+.arrow-btn {
+    display: inline-block;
+    color: #FFFFFF;
+//     position: relative;
+//     top: 15px;
+}
+.page-navigation {
+    
+    float: right;
 }
 
+// .next {
+//      position: relative;
+//      top: -10;
+// }
 /* Линия выбора*/
 .slider-text {
     color: #FFFFFF;
@@ -339,12 +358,7 @@ body {
 
 }
 
-.arrow-btn {
-    display: inline-block;
-    color: #FFFFFF;
-    
-    // float: right;
-}
+
 
 .prev {
     margin-left: 43px;
@@ -436,19 +450,27 @@ body {
     margin-top: 35px;
 }
 
-.choice__btn {
-    margin-top: 89px;
-}
+
+// .choice__btn {
+//     margin-top: 89px;
+// }
 
 
-.slider__btn1 {
-    margin-right: 181px;
-}
+// .slider__btn1 {
+//     margin-right: 181px;
+// }
 
-.slider__btn2 {
-    margin-right: 72px;
-}
+// .slider__btn2 {
+//     margin-right: 72px;
+// }
 
-.slider__btn3 {
-    margin-right: 145px;
+// .slider__btn3 {
+//     margin-right: 145px;
+// }
+footer {
+	// position: fixed;
+	margin-top: 100px;
+	padding: 10px;
+	color: #FFFFFF;
+    z-index: 1;
 }

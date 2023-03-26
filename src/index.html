@@ -157,7 +157,13 @@
                                 </div>
                             </div>
                         </div>
-
+                        <!-- <div class="page-navigation">
+                            <div class="arrow-btn slider-previous prev" onclick="plusSlides(-1)">
+                            </div>
+                            <div class="arrow-btn numbertext">1 / 3</div>
+                            <div class="arrow-btn slider-next next" onclick="plusSlides(1)">
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -213,27 +219,32 @@
                 </div>
             </div>
             <div class="container">
-            <div class="slider-controls" style="text-align:center">
-                <div>
-                <div class="slider-text shevron">Шевронные ленты</div>
-                <div class="slider-text konv">Резиновые конвейерные ленты</div>
-                <div class="slider-text pvh">ПВХ конвейерные ленты</div>
-            </div>
-                <div>
-                <span class="line" onclick="currentSlide(1)"></span>
-                
-                <span class="line" onclick="currentSlide(2)"></span>
-                
-                <span class="line" onclick="currentSlide(3)"></span>
-                
-                <div class="arrow-btn slider-previous prev" onclick="plusSlides(-1)">
+                <div class="slider-controls" style="text-align:center">
+                    <div>
+                        <div class="slider-text shevron">Шевронные ленты</div>
+                        <div class="slider-text konv">Резиновые конвейерные ленты</div>
+                        <div class="slider-text pvh">ПВХ конвейерные ленты</div>
+                    </div>
+                    <div>
+                        <span class="line" onclick="currentSlide(1)"></span>
+
+                        <span class="line" onclick="currentSlide(2)"></span>
+
+                        <span class="line" onclick="currentSlide(3)"></span>
+
+                        <div class="arrow-btn slider-previous prev" id="prev" onclick="minusSlides(1)">
                 </div>
-                <div class="arrow-btn numbertext">1 / 3</div>
-                <div class="arrow-btn slider-next next" onclick="plusSlides(1)">
+                <div class="arrow-btn numbertext">
+                    <!-- 1 / 3 -->
+                    <div class="page-number count" id="click">1</div>
+                    <div class="page-number">/</div>
+                    <div class="page-number">3</div>
                 </div>
-            </div>
-                
-                
+                <div class="arrow-btn slider-next next" id="next" onclick="plusSlides(1)">
+                    </div>
+                </div>
+
+
             </div>
         </div>
         </div>
@@ -241,10 +252,10 @@
         <!-- <br> -->
         <!-- Линии-->
         <div class="line-navigation">
-            
+
             <div class="slider-controls ">
 
-                
+
             </div>
         </div>
 
@@ -326,7 +337,9 @@
         </div>
     </main>
     <footer>
-
+        <div class="copyright">
+			<p> </p>
+		</div>
     </footer>
 
     <script src="js/main.js"></script>
